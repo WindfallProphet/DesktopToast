@@ -41,6 +41,11 @@ namespace DesktopToast
 			return await ShowBaseAsync(document, request.AppId);
 		}
 
+		public static Task<object> ShowAsync(char[] notification)
+		{
+			throw new NotImplementedException();
+		}
+
 		/// <summary>
 		/// Shows a toast using JSON format.
 		/// </summary>
