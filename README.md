@@ -39,7 +39,7 @@ public async Task<bool> ShowToastAsync()
     return (result == ToastResult.Activated);
 }
 ```
-```json
+```
 curl -0 -v -X POST http://localhost:8000 -H "Expect:" -H 'Content-Type: application/json; charset=utf-8' -d @- { ""ToastTitle"":""DesktopToast Proxy Sample"", ""ToastBody"":""This is a toast test."", ""AppId"":""DesktopToast.Proxy"" };
 ```
 
