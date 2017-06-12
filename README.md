@@ -39,6 +39,7 @@ public async Task<bool> ShowToastAsync()
     return (result == ToastResult.Activated);
 }
 ```
+Send notifications from curl to Windows.
 ```
 curl -H "Content-Type: application/json" -X POST -d '{ "ToastTitle":"DesktopToast Proxy Sample", "ToastBody":"This is a toast test.", "AppId":"DesktopToast.Proxy" }' http://localhost:8000
 ```
