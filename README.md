@@ -40,7 +40,7 @@ public async Task<bool> ShowToastAsync()
 }
 ```
 ```
-curl -0 -v -X POST http://localhost:8000 -H "Expect:" -H 'Content-Type: application/json; charset=utf-8' -d @- { ""ToastTitle"":""DesktopToast Proxy Sample"", ""ToastBody"":""This is a toast test."", ""AppId"":""DesktopToast.Proxy"" };
+curl -H "Content-Type: application/json" -X POST -d '{ "ToastTitle":"DesktopToast Proxy Sample", "ToastBody":"This is a toast test.", "AppId":"DesktopToast.Proxy" }' http://localhost:8000
 ```
 
 ToastRequest class is a container of information necessary for installing a shortcut and showing a toast. It has the following properties:
